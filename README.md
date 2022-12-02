@@ -8,18 +8,18 @@ This is a postfix evaluator written in C. It takes a postfix expression as input
 
 To compile the program, run `gcc PostfixEvaluator.c -o PostfixEvaluator` in the root directory. This will create an executable called `PostfixEvaluator`.
 
-To run the program, run `./postfix` with the postfix expression as an argument. For example, `./postfix 23+` will evaluate `2 + 3` and print `5`.
+To run the program, run `./PostfixEvaluator` with the postfix expression as an argument. For example, `./PostfixEvaluator 23+` will evaluate `2 + 3` and print `5`.
 
 ## Example
 
 ```
-$ ./postfix "25+"
+$ ./PostfixEvaluator "25+"
 7
 
-$ ./postfix "29*"
+$ ./PostfixEvaluator "29*"
 18
 
-$ ./postfix "642+*"
+$ ./PostfixEvaluator "642+*"
 36
 ```
 

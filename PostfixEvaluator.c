@@ -70,7 +70,9 @@ int PostfixEvaluator(char* input)
     Stack *s = initStack(length);
 
     for (int i = 0; i < length; i++) {
-        if (isdigit(input[i])) {
+        if (input[i] == ' ' || input[i] == '\t') {
+            continue;
+        } else if (isdigit(input[i])) {
             push(s, input[i] - '0');
         } else {
             int op1 = pop(s);

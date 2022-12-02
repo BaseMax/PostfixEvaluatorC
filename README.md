@@ -6,14 +6,25 @@ This is a postfix evaluator written in C. It takes a postfix expression as input
 
 ## Usage
 
-To compile the program, run `make` in the root directory. This will create an executable called `postfix`.
+To compile the program, run `gcc PostfixEvaluator.c -o PostfixEvaluator` in the root directory. This will create an executable called `PostfixEvaluator`.
 
-To run the program, run `./postfix` in the root directory. This will prompt you for a postfix expression. Enter the expression and press enter. The program will then evaluate the expression and print the result.
+To run the program, run `./postfix` with the postfix expression as an argument. For example, `./postfix 23+` will evaluate `2 + 3` and print `5`.
 
 ## Example
 
 ```
-$ ./postfix
-Enter a postfix expression: 2 3 + 4 *
-10
+$ ./postfix "25+"
+7
+
+$ ./postfix "29*"
+18
+
+$ ./postfix "642+*"
+36
 ```
+
+## License
+
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+
+© Copyright Max Base, 2022
